@@ -1,0 +1,99 @@
+body {
+  background-image: url('BaberBg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+}
+
+header {
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  position: absolute;
+  left: 2em;
+  top: 13em;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav > ul > a {
+  display: block;
+  color: #f2f2f2;
+  padding: 1em 1.5em;
+  text-decoration: none;
+}
+
+nav > ul > a:hover {
+  color: gold;
+}
+
+#menu-button {
+  display: none;
+}
+
+a.app {
+  color: black;
+  background-color: gold;
+}
+
+a.app:hover {
+  color: #ffffff;
+  background-color: rgba(255, 187, 0, 0.829);
+}
+
+a.home {
+  color: gold;
+}
+
+@media (max-width: 850px) {
+  header {
+    margin: -8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 8px;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 0 0 20px black;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+  }
+
+  nav.open {
+    display: block;
+  }
+
+  nav > ul{
+    flex-direction: column;
+    background-color: black;
+  }
+
+  #menu-button {
+    display: block;
+  }
+
+  #menu-button:hover {
+    background-color: gold;
+  }
+}
