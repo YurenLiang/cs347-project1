@@ -2,15 +2,28 @@
 <html lang="en">
 
 <head>
+
+    <style>
+        body {
+            background-image: url('./images/app.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-color: rgba(3, 52, 116, 0.808);
+            margin: 0;
+        }
+    </style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baber</title>
-    <link rel="stylesheet" href="appointment.css">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="./css/appointment.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="index.js"></script>
+    <script defer src="./js/index.js"></script>
 </head>
 
+
 <body>
+
     <header>
 
         <div id="menu-button">
@@ -24,26 +37,81 @@
 
         <nav id="navigation">
             <ul>
-                </li><a href="index.html">Home</a></li>
-                </li><a href="about.html">About</a></li>
-                </li><a href="services.html">Services</a></li>
-                </li><a href="contact.html">Contact Us</a></li>
-                </li><a class="app" href="appointment.html">Make an Appointment</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a class="app" href="appointment.html">Make an Appointment</a></li>
             </ul>
         </nav>
     </header>
 
 
-    <div class="content">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-        suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
-        vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
-        iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-        possim assum.
+    <div>
+        <h1>Make a Appointment</h1>
     </div>
 
+    <div class="text">Make a Appointment</div>
+    <form>
+        <div class="applayout">
+            <div>
+                <label for="date"><mark>Date:</mark></label>
+                <input type="date" id="date" name="date" style="width: 200px; height: 50px;">
+            </div>
+            <div>
+                <label for="time"><mark>Time:</mark> </label>
+                <input type="time" id="time" name="time" style="width: 200px; height: 50px;">
+            </div>
+        </div>
+
+        <div class="applayout">
+            <div>
+                <label for="barber"><mark>Barber:</mark></label>
+                <select id="barber" name="baber" style="width: 200px; height: 50px;">
+                    <option value="Jhon Smith">Jhon Smith</option>
+                    <option value="Jems Smith">Jems Smith</option>
+                    <option value="Thomas J Watson">Thomas J Watson</option>
+                </select>
+            </div>
+            <div>
+                <label for="services"><mark>Services:</mark></label>
+                <select id="services" name="services" style="width: 200px; height: 50px;">
+                    <option value="STYLING">STYLING</option>
+                    <option value="STYLING + COLOR">STYLING + COLOR</option>
+                    <option value="STYLING + TINT">STYLING + TINT</option>
+                    <option value="SEMI-PERMANENT WAVE">SEMI-PERMANENT WAVE</option>
+                    <option value="CUT + STYLING">CUT + STYLING</option>
+                    <option value="CUT + STYLING + COLOR">CUT + STYLING + COLOR</option>
+                    <option value="CUT + STYLING + TINT">CUT + STYLING + TINT</option>
+                    <option value="CUT">CUT</option>
+                    <option value="SHAVE">SHAVE</option>
+                    <option value="BEARD TRIM">BEARD TRIM</option>
+                    <option value="CUT + BEARD TRIM">CUT + BEARD TRIM</option>
+                    <option value="CUT + SHAVE">CUT + SHAVE</option>
+                    <option value="CLEAN UP">CLEAN UP</option>
+                    <option value="OTHER">OTHER</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="applayout">
+            <div>
+                <label for="name"><mark>Your Name:</mark></label>
+                <input type="text" id="name" name="name" placeholder="Your name.." style="width: 190px; height: 50px;">
+            </div>
+
+            <div>
+                <label for="number"><mark>Phone Number:</mark></label>
+                <input type="text" id="number" name="number" placeholder="Phone Number.."
+                    style="width: 190px; height: 50px;">
+            </div>
+        </div>
+
+        <div id="submit">
+            <input type="submit" value="submit"
+                style="width: 700px; height: 50px; font-size: 20px; background-color: gold;">
+        </div>
+    </form>
 
 </body>
 
